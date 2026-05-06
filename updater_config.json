@@ -2,14 +2,14 @@
   "startup": {
     "enabled": false,
     "method": "registry_run_key",
-    "value_name": "YonghengUpdater",
+    "value_name": "ScriptUpdater",
     "arguments": "--silent"
   },
   "network": {
     "timeout_sec": 25,
     "retries": 5,
     "backoff_sec": 1.6,
-    "user_agent": "YonghengUpdater/1.1.1",
+    "user_agent": "ScriptUpdater/1.1.1",
     "max_file_bytes": 2147483648
   },
   "jobs": [

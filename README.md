@@ -1,4 +1,4 @@
-# YonghengUpdater 自动更新工具
+# ScriptUpdater 自动更新工具
 
 一个面向 Windows 的轻量级自动更新脚本，用于按配置下载远端目录或 manifest 中的文件，安全替换到本地目标目录，并在更新结束后启动目标程序。
 
@@ -72,13 +72,13 @@ python -m venv .venv
 脚本中的完整命令为：
 
 ```powershell
-.\.venv\Scripts\python.exe -m PyInstaller --onefile --name YonghengUpdater --icon "app.ico" "main.py"
+.\.venv\Scripts\python.exe -m PyInstaller --onefile --name ScriptUpdater --icon "app.ico" "main.py"
 ```
 
 打包产物：
 
 ```text
-dist\YonghengUpdater.exe
+dist\ScriptUpdater.exe
 ```
 
 `build_exe.ps1` 可以提交到 Git；`build/`、`dist/` 和 `*.spec` 是本地打包产物，不需要提交。

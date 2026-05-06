@@ -2,7 +2,7 @@
 
 ## 项目定位
 
-这是一个 Windows 自动更新工具，主程序是 `main.py`，应用名为 `YonghengUpdater`。项目用于从配置中的 HTTP 目录或 manifest 下载文件，替换到目标目录，并启动目标程序。
+这是一个 Windows 自动更新工具，主程序是 `main.py`，应用名为 `ScriptUpdater`。项目用于从配置中的 HTTP 目录或 manifest 下载文件，替换到目标目录，并启动目标程序。
 
 ## 技术栈
 
@@ -63,13 +63,13 @@
 脚本中的完整命令为：
 
 ```powershell
-.\.venv\Scripts\python.exe -m PyInstaller --onefile --name YonghengUpdater --icon "app.ico" "main.py"
+.\.venv\Scripts\python.exe -m PyInstaller --onefile --name ScriptUpdater --icon "app.ico" "main.py"
 ```
 
 输出文件：
 
 ```text
-dist\YonghengUpdater.exe
+dist\ScriptUpdater.exe
 ```
 
 `build_exe.ps1` 可以提交；`build/`、`dist/` 和 `*.spec` 当前被 `.gitignore` 忽略，不应提交到仓库。

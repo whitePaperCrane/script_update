@@ -26,11 +26,11 @@ from typing import Dict, List, Optional, Sequence, Tuple
 # 常量定义
 # -----------------------------
 
-APP_NAME = "YonghengUpdater"
+APP_NAME = "ScriptUpdater"
 APP_VERSION = "1.1.1"
 DEFAULT_CONFIG_FILENAME = "updater_config.json"
 LOCK_FILENAME = "updater.lock"
-DEFAULT_STARTUP_VALUE_NAME = "YonghengUpdater"
+DEFAULT_STARTUP_VALUE_NAME = "ScriptUpdater"
 PERCENT_RE = re.compile(r"%[0-9A-Fa-f]{2}")
 
 DEFAULT_CONFIG = {

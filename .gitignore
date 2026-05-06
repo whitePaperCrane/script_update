@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Logs and local runtime output
+*.log
+*.part
+*.tmp
+.gitconfig-codex
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

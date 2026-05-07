@@ -49,6 +49,7 @@
 ## 依赖安装
 
 ```powershell
+py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
@@ -65,6 +66,8 @@
 ```powershell
 .\.venv\Scripts\python.exe -m PyInstaller --onefile --name ScriptUpdater --icon "app.ico" "main.py"
 ```
+
+`build_exe.ps1` 会检查项目根目录下的 `.venv\Scripts\python.exe` 是否存在；如果不存在，应先创建 `.venv` 并安装依赖。
 
 输出文件：
 

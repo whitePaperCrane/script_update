@@ -16,8 +16,16 @@
 
 运行逻辑仅使用 Python 标准库。打包为 exe 时需要 PyInstaller。
 
+首次克隆或本地没有 `.venv` 时，先在项目根目录创建虚拟环境并安装依赖：
+
 ```powershell
-python -m venv .venv
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+如果 `.venv` 已存在，只需要重新安装或更新依赖：
+
+```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
@@ -69,7 +77,7 @@ python -m venv .venv
 
 脚本用途：将当前更新程序打包为单文件 Windows exe。
 
-脚本中的完整命令为：
+`build_exe.ps1` 会使用项目根目录下的 `.venv\Scripts\python.exe`。如果 `.venv` 不存在，脚本会提示先执行环境初始化命令。实际打包命令等价于：
 
 ```powershell
 .\.venv\Scripts\python.exe -m PyInstaller --onefile --name ScriptUpdater --icon "app.ico" "main.py"
